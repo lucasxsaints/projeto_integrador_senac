@@ -37,15 +37,32 @@
             </div>
             <div class="card-content">
                 <div class="card-content-area">
-                    <input type="text" placeholder="Nome">
-                    <input type="password" placeholder="Senha">
+                    <input type="text" placeholder="Nome" id="nome">
+                    <input type="password" placeholder="Senha" id="senha">
+                    <input type="submit" onclick="login(); return false">
                 </div>
             </div>
             <div class="card-footer">
-                <button>Enviar</button>
+                
             </div>
         </form>
     </div>
+
+    <script>
+        
+        function login() {
+            let nome = document.getElementById("nome").value;
+            let senha = document.getElementById("senha").value;
+
+            if(nome == "Projeto" && senha == "abc"){
+                alert("Sucesso!");
+                location.href = "home.html";
+            }else{
+                alert("Usuário ou senha incorretos");
+            }
+        }
+
+    </script>
 </body>
 
 </html>
