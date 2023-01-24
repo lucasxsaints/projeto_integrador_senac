@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #0c1534;
+}
+
+/* HEADER */
+
+#menu-h {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(243, 230, 45);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    margin-bottom: 150px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#menu-h a {
+    color: rgb(243, 230, 45);
+    text-decoration: solid;
+}
+
+#menu-h li {
+    display: inline-block;
+    margin: 20px;
+}

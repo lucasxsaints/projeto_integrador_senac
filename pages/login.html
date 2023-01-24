@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title></title>
 
 </head>
@@ -15,7 +16,7 @@
     <nav id="menu-h">
         <ul>
             <li>
-                <a href="https://satellasoft.com">
+                <a href="../index.html">
                     Home
                 </a>
             </li>
@@ -43,26 +44,13 @@
                 </div>
             </div>
             <div class="card-footer">
-                
+
             </div>
         </form>
     </div>
 
-    <script>
-        
-        function login() {
-            let nome = document.getElementById("nome").value;
-            let senha = document.getElementById("senha").value;
-
-            if(nome == "Projeto" && senha == "abc"){
-                alert("Sucesso!");
-                location.href = "home.html";
-            }else{
-                alert("Usuário ou senha incorretos");
-            }
-        }
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
