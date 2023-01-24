@@ -1,11 +1,17 @@
-/* LOGIN */
+/* CADASTRO */
 
-#login {
+#cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+#cadastro b {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
 }
 
 .card {
@@ -13,7 +19,6 @@
     padding: 40px;
     border-radius: 15px;
     width: 280px;
-
 }
 
 .card-header {
@@ -31,33 +36,14 @@
     margin-left: -5px;
 }
 
-.card-content input {
-    color: rgb(243, 230, 45);
-    font-size: 15px;
-    opacity: 0.8;
+#cadastro select {
+    color: #000000;
+    background-color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
 }
 
-.card-content-area {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-
-}
-
-.card-content-area input {
-    margin-top: 10px;
-    padding: 0 5px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #e1e1e1;
-    outline: none;
-    color: #fff;
-}
-
-
-.card-content-area [type="submit"] {
-    /* width: 100%; */
-    height: 40px;
+button {
     background-color: rgb(243, 230, 45);
     border: none;
     color: #000000;
@@ -65,12 +51,10 @@
     font-size: 15px;
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
+
 }
 
-.card-content-area [type="submit"]:hover {
+button:hover {
     background-color: #ffff;
     color: black;
 }

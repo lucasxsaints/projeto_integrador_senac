@@ -8,7 +8,6 @@ body {
 
 #menu-h {
     background-color: rgba(0, 0, 0, 0.3);
-    color: rgb(243, 230, 45);
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 15px;
     margin-bottom: 150px;
@@ -27,4 +26,14 @@ body {
 #menu-h li {
     display: inline-block;
     margin: 20px;
+}
+
+#menu-h li:hover {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 25px #ffffff;
+}
+
+#menu-h a:hover {
+    color: black;
 }
