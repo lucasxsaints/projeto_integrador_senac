@@ -14,7 +14,7 @@
         <b class="ls-label-text">Bloco</b>
         <div class="ls-custom-select">
     
-        <select name="cadastrar-bloco" >
+        <select name="cadastrar-bloco" id="bloco">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -29,11 +29,11 @@
         <b class="ls-label-text">Andar</b>
         <div class="ls-custom-select">
     
-        <select name="cadastrar-andar" >
-        <option value="1">1ª</option>
-        <option value="2">2ª</option>
-        <option value="3">3ª</option>
-        <option value="4">4ª</option>
+        <select name="cadastrar-andar" id="andar">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
     </select>
 </div>
 </label>
@@ -44,7 +44,7 @@
         <b class="ls-label-text">Apartamento</b>
         <div class="ls-custom-select">
     
-    <select name="cadastrar-apartamento" >
+    <select name="cadastrar-apartamento" id="apto">
         <option value="101">101</option>
         <option value="102">102</option>
         <option value="103">103</option>
@@ -71,11 +71,113 @@
 
 <div id = "divBusca">
     
-    <button id="btnBusca">Buscar</button>
+    <button onclick="buscar()">Buscar</button> 
 
 </div>
 
+<div class ='text'>
+    <p>Bloco: <span class="bloco"></span></p>
+    <p>Andar: <span class="andar"></span></p>
+    <p>Apto: <span class="apto"></span></p>
+</div>
 
+<script>
+
+function buscar() {
+    let numeroBloco = document.querySelector('#bloco').value;
+    let numeroAndar = document.querySelector('#andar').value;
+    let numeroApto = document.querySelector('#apto').value;
+
+    switch (numeroBloco) {
+  case 1:
+    numeroBloco.textContent = "OK";
+    break;
+  case 2:
+    numeroBloco.textContent = "OK";
+    break;
+    case 3:
+    numeroBloco.textContent = "OK";
+    break;
+    case 4:
+    numeroBloco.textContent = "OK";
+    break;
+  default:
+    numeroBloco.textContent = "No value found";
+}
+
+switch (numeroAndar) {
+  case 1:
+    numeroAndar.textContent = "OK";
+    break;
+  case 2:
+    numeroAndar.textContent = "OK";
+    break;
+    case 3:
+    numeroAndar.textContent = "OK";
+    break;
+    case 4:
+    numeroAndar.textContent = "OK";
+    break;
+  default:
+    numeroAndar.textContent = "No value found";
+}
+
+switch (numeroApto) {
+  case 101:
+    numeroApto.textContent = "OK";
+    break;
+  case 102:
+    numeroApto.textContent = "OK";
+    break;
+    case 103:
+    numeroApto.textContent = "OK";
+    break;
+    case 104:
+    numeroApto.textContent = "OK";
+    break;
+    case 201:
+    numeroApto.textContent = "OK";
+    break;
+  case 202:
+    numeroApto.textContent = "OK";
+    break;
+    case 203:
+    numeroApto.textContent = "OK";
+    break;
+    case 204:
+    numeroApto.textContent = "OK";
+    break;
+    case 301:
+    numeroApto.textContent = "OK";
+    break;
+  case 302:
+    numeroApto.textContent = "OK";
+    break;
+    case 303:
+    numeroApto.textContent = "OK";
+    break;
+    case 304:
+    numeroApto.textContent = "OK";
+    break;
+    case 401:
+    numeroApto.textContent = "OK";
+    break;
+  case 402:
+    numeroApto.textContent = "OK";
+    break;
+    case 403:
+    numeroApto.textContent = "OK";
+    break;
+    case 404:
+    numeroApto.textContent = "OK";
+    break;
+  default:
+    numeroApto.textContent = "No value found";
+
+}
+}
+
+</script>
 
 
 
