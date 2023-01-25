@@ -71,7 +71,7 @@
 
 <div id = "divBusca">
     
-    <button onclick="buscar()">Buscar</button> 
+    <button type="button" onclick="buscar(event)">Buscar</button> 
 
 </div>
 
@@ -83,8 +83,8 @@
 
 <script>
 
-function buscar() {
-    
+function buscar(event) {
+    event.preventDefault();
     //let text = document.querySelector('.text').value;
     let bloco = document.querySelector('.Bloco');
     let andar = document.querySelector('.Andar');
@@ -94,91 +94,93 @@ function buscar() {
     let numeroAndar = document.querySelector('#andar').value;
     let numeroApto = document.querySelector('#apto').value;
 
-    switch (bloco) {
+    console.log(numeroBloco, numeroAndar, numeroApto);
+
+    switch (parseInt(numeroBloco)) {
   case 1:
-    bloco.textContent = "OK";
+    bloco.innerText = "OK";
     break;
   case 2:
-    bloco.textContent = "OK";
+    bloco.innerText = "OK";
     break;
     case 3:
-    bloco.textContent = "OK";
+    bloco.innerText = "OK";
     break;
     case 4:
-    bloco.textContent = "OK";
+    bloco.innerText = "OK";
     break;
   default:
-    bloco.textContent = "No value found";
+    bloco.innerText = "No value found";
 }
 
-switch (andar) {
+switch (parseInt(numeroAndar)) {
   case 1:
-    andar.textContent = "OK";
+    andar.innerText = "OK";
     break;
   case 2:
-    andar.textContent = "OK";
+    andar.innerText = "OK";
     break;
     case 3:
-    andar.textContent = "OK";
+    andar.innerText = "OK";
     break;
     case 4:
-    andar.textContent = "OK";
+    andar.innerText= "OK";
     break;
   default:
-    andar.textContent = "No value found";
+    andar.innerText = "No value found";
 }
 
-switch (apto) {
+switch (parseInt(numeroApto)) {
   case 101:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
   case 102:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 103:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 104:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 201:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
   case 202:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 203:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 204:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 301:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
   case 302:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 303:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 304:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 401:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
   case 402:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 403:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
     case 404:
-    apto.textContent = "OK";
+    apto.innerText = "OK";
     break;
   default:
-    apto.textContent = "No value found";
+    apto.innerText = "No value found";
 
 }
 }
