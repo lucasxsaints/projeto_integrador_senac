@@ -76,110 +76,113 @@
 </div>
 
 <div class ='text'>
-    <p>Bloco: <span class="bloco"></span></p>
-    <p>Andar: <span class="andar"></span></p>
-    <p>Apto: <span class="apto"></span></p>
+    <p>Bloco: <span class="Bloco"></span></p>
+    <p>Andar: <span class="Andar"></span></p>
+    <p>Apto: <span class="Apto"></span></p>
 </div>
 
 <script>
 
 function buscar() {
+    
+    //let text = document.querySelector('.text').value;
+    let bloco = document.querySelector('.Bloco');
+    let andar = document.querySelector('.Andar');
+    let apto = document.querySelector('.Apto');
+
     let numeroBloco = document.querySelector('#bloco').value;
     let numeroAndar = document.querySelector('#andar').value;
     let numeroApto = document.querySelector('#apto').value;
 
-    switch (numeroBloco) {
+    switch (bloco) {
   case 1:
-    numeroBloco.textContent = "OK";
+    bloco.textContent = "OK";
     break;
   case 2:
-    numeroBloco.textContent = "OK";
+    bloco.textContent = "OK";
     break;
     case 3:
-    numeroBloco.textContent = "OK";
+    bloco.textContent = "OK";
     break;
     case 4:
-    numeroBloco.textContent = "OK";
+    bloco.textContent = "OK";
     break;
   default:
-    numeroBloco.textContent = "No value found";
+    bloco.textContent = "No value found";
 }
 
-switch (numeroAndar) {
+switch (andar) {
   case 1:
-    numeroAndar.textContent = "OK";
+    andar.textContent = "OK";
     break;
   case 2:
-    numeroAndar.textContent = "OK";
+    andar.textContent = "OK";
     break;
     case 3:
-    numeroAndar.textContent = "OK";
+    andar.textContent = "OK";
     break;
     case 4:
-    numeroAndar.textContent = "OK";
+    andar.textContent = "OK";
     break;
   default:
-    numeroAndar.textContent = "No value found";
+    andar.textContent = "No value found";
 }
 
-switch (numeroApto) {
+switch (apto) {
   case 101:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
   case 102:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 103:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 104:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 201:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
   case 202:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 203:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 204:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 301:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
   case 302:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 303:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 304:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 401:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
   case 402:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 403:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
     case 404:
-    numeroApto.textContent = "OK";
+    apto.textContent = "OK";
     break;
   default:
-    numeroApto.textContent = "No value found";
+    apto.textContent = "No value found";
 
 }
 }
 
 </script>
-
-
-
 </body>
 </html>
