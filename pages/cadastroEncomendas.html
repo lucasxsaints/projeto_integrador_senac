@@ -15,17 +15,17 @@
         <ul>
             <li>
                 <a href="../index.html">
-                    Home
+                    Inicio
                 </a>
             </li>
 
-            <li><a href="https://academy.satellasoft.com">Sobre</a></li>
+            <!-- <li><a href="https://academy.satellasoft.com">Sobre</a></li> -->
 
-            <li><a href="#">Quem Somos</a></li>
+            <li><a href="../pages/endereco.html">Endereços</a></li>
 
-            <li><a href="#">Contato</a></li>
+            <li><a href="../pages/cadastroEncomendas.html">Cadastro</a></li>
 
-            <li><a href="#">Entrar</a></li>
+            <!-- <li><a href="#">Entrar</a></li> -->
         </ul>
     </nav>
 
@@ -40,7 +40,7 @@
                 <b class="ls-label-text">Bloco</b>
                 <div class="ls-custom-select">
 
-                    <select name="cadastrar-bloco">
+                    <select name="cadastrar-bloco" id="bloco">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -55,7 +55,7 @@
                 <b class="ls-label-text">Andar</b>
                 <div class="ls-custom-select">
 
-                    <select name="cadastrar-andar">
+                    <select name="cadastrar-andar" id="andar">
                         <option value="1">1ª</option>
                         <option value="2">2ª</option>
                         <option value="3">3ª</option>
@@ -69,8 +69,7 @@
             <label class="ls-label col-md-2">
                 <b class="ls-label-text">Apartamento</b>
                 <div class="ls-custom-select">
-
-                    <select name="cadastrar-apartamento">
+                    <select name="cadastrar-apartamento" id="apto">
                         <option value="101">101</option>
                         <option value="102">102</option>
                         <option value="103">103</option>
@@ -94,18 +93,125 @@
                     </select>
                 </div>
             </label>
-
-
             <div id="divBusca">
+                <button type="button" id="btnBusca" onclick="buscar(event)">Buscar</button>
+            </div>
 
-                <button id="btnBusca">Buscar</button>
-
+            <div class='text'>
+                <p>Bloco: <span class="Bloco"></span></p>
+                <p>Andar: <span class="Andar"></span></p>
+                <p>Apto: <span class="Apto"></span></p>
             </div>
         </div>
     </div>
 
+    <script>
+        function buscar(event) {
+
+            let numeroBloco = document.querySelector('#bloco').value;
+            let numeroAndar = document.querySelector('#andar').value;
+            let numeroApto = document.querySelector('#apto').value;
+
+            if (confirm(`Salvar os dados\n Bloco:${numeroBloco},\n Andar: ${numeroAndar} \n e Apartamento: ${numeroApto}`)) {
+                event.preventDefault();
+                //let text = document.querySelector('.text').value;
+                let bloco = document.querySelector('.Bloco');
+                let andar = document.querySelector('.Andar');
+                let apto = document.querySelector('.Apto');
 
 
+                console.log(numeroBloco, numeroAndar, numeroApto);
+
+                switch (parseInt(numeroBloco)) {
+                    case 1:
+                        bloco.innerText = "OK";
+                        break;
+                    case 2:
+                        bloco.innerText = "OK";
+                        break;
+                    case 3:
+                        bloco.innerText = "OK";
+                        break;
+                    case 4:
+                        bloco.innerText = "OK";
+                        break;
+                    default:
+                        bloco.innerText = "No value found";
+                }
+
+                switch (parseInt(numeroAndar)) {
+                    case 1:
+                        andar.innerText = "OK";
+                        break;
+                    case 2:
+                        andar.innerText = "OK";
+                        break;
+                    case 3:
+                        andar.innerText = "OK";
+                        break;
+                    case 4:
+                        andar.innerText = "OK";
+                        break;
+                    default:
+                        andar.innerText = "No value found";
+                }
+
+                switch (parseInt(numeroApto)) {
+                    case 101:
+                        apto.innerText = "OK";
+                        break;
+                    case 102:
+                        apto.innerText = "OK";
+                        break;
+                    case 103:
+                        apto.innerText = "OK";
+                        break;
+                    case 104:
+                        apto.innerText = "OK";
+                        break;
+                    case 201:
+                        apto.innerText = "OK";
+                        break;
+                    case 202:
+                        apto.innerText = "OK";
+                        break;
+                    case 203:
+                        apto.innerText = "OK";
+                        break;
+                    case 204:
+                        apto.innerText = "OK";
+                        break;
+                    case 301:
+                        apto.innerText = "OK";
+                        break;
+                    case 302:
+                        apto.innerText = "OK";
+                        break;
+                    case 303:
+                        apto.innerText = "OK";
+                        break;
+                    case 304:
+                        apto.innerText = "OK";
+                        break;
+                    case 401:
+                        apto.innerText = "OK";
+                        break;
+                    case 402:
+                        apto.innerText = "OK";
+                        break;
+                    case 403:
+                        apto.innerText = "OK";
+                        break;
+                    case 404:
+                        apto.innerText = "OK";
+                        break;
+                    default:
+                        apto.innerText = "No value found";
+
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
