@@ -46,7 +46,7 @@
     <b class="ls-label-text">Apartamento</b>
     <div class="ls-custom-select">
 
-      <select name="cadastrar-apartamento" id="apto">
+      <select name="cadastrar-apartamento" id="apartamento">
         <option value="101">101</option>
         <option value="102">102</option>
         <option value="103">103</option>
@@ -80,7 +80,7 @@
   <div class='text'>
     <p>Bloco: <span class="Bloco"></span></p>
     <p>Andar: <span class="Andar"></span></p>
-    <p>Apto: <span class="Apto"></span></p>
+    <p>Apartamento: <span class="Apartamento"></span></p>
   </div>
 
   <script>
@@ -90,15 +90,15 @@
       //let text = document.querySelector('.text').value;
       let bloco = document.querySelector('.Bloco');
       let andar = document.querySelector('.Andar');
-      let apto = document.querySelector('.Apto');
+      let apartamento = document.querySelector('.Apartamento');
 
       let numeroBloco = document.querySelector('#bloco').value;
       let numeroAndar = document.querySelector('#andar').value;
-      let numeroApto = document.querySelector('#apto').value;
+      let numeroApartamento = document.querySelector('#apartamento').value;
 
-      console.log(numeroBloco, numeroAndar, numeroApto);
+      console.log(numeroBloco, numeroAndar, numeroApartamento);
 
-      switch (parseInt(numeroBloco)) {
+      /*switch (parseInt(numeroBloco)) {
         case 1:
           bloco.innerText = "OK";
           break;
@@ -132,59 +132,59 @@
           andar.innerText = "No value found";
       }
 
-      switch (parseInt(numeroApto)) {
+      switch (parseInt(numeroApartamento)) {
         case 101:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 102:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 103:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 104:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 201:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 202:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 203:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 204:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 301:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 302:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 303:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 304:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 401:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 402:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 403:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         case 404:
-          apto.innerText = "OK";
+          apartamento.innerText = "OK";
           break;
         default:
-          apto.innerText = "No value found";
+          apartamento.innerText = "No value found";
 
-      }
+      }*/
     }
 
   </script>
