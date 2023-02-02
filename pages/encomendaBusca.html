@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encomendas</title>
+    <title>Encomendas | Busca</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cadencomendas.css">
 </head>
@@ -21,9 +21,9 @@
 
             <!-- <li><a href="https://academy.satellasoft.com">Sobre</a></li> -->
 
-            <li><a href="../pages/endereco.html">Endereços</a></li>
+            <li><a href="./encomendaBusca.html">Busca</a></li>
 
-            <li><a href="../pages/cadastroEncomendas.html">Cadastro</a></li>
+            <li><a href="./encomendaCadastro.html">Cadastro</a></li>
 
             <!-- <li><a href="#">Entrar</a></li> -->
         </ul>
@@ -94,7 +94,7 @@
                 </div>
             </label>
             <div id="divBusca">
-                <button type="button" id="btnBusca" onclick="buscarEncomenda(event)">Buscar</button>
+                <button type="button" id="btnBusca" onclick="buscar(event)">Buscar</button>
             </div>
 
             <div class='text'>
@@ -109,7 +109,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../js/encomedas.js"></script>
     <script>
-        function buscarEncomenda(event) {
+        function buscar(event) {
 
             let numeroBloco = document.querySelector('#bloco').value;
             let numeroAndar = document.querySelector('#andar').value;
@@ -121,7 +121,6 @@
                 let bloco = document.querySelector('.Bloco');
                 let andar = document.querySelector('.Andar');
                 let apto = document.querySelector('.Apto');
-                buscar();
 
                 console.log(numeroBloco, numeroAndar, numeroApto);
 
@@ -213,6 +212,8 @@
 
                 }
             }
+
+            buscarEncomenda();
         }
     </script>
 
