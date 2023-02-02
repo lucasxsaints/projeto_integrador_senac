@@ -37,3 +37,45 @@ body {
 #menu-h a:hover {
     color: black;
 }
+
+section{
+    width: 100%;
+    min-width: 360px;
+    max-width: 1280px;
+    margin: auto;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+section p {
+    font-weight: bold;
+    background-color: gray;
+    padding: 10px;
+}
+section b {
+    color: red;
+}
+
+section table{
+    width: 100%;
+   color:#ffffff ;
+   font-family: inherit;
+   text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #616161;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #0c1534;
+}

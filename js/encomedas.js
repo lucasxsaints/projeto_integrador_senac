@@ -3,26 +3,19 @@ const http = axios.create({
 });
 
 
-async function buscarEncomenda() {
-    let bloco = document.querySelector('.Bloco');
-    let andar = document.querySelector('.Andar');
-    let apartamento = document.querySelector('.Apto');
+async function buscarEncomenda(bloco, andar, apartamento) {
     try {
         let res = await http.get("/encomenda/list/" + bloco + "/" + andar + "/" + apartamento);
         console.log(res);
-        return res;
+        return res.data;
     } catch (error) {
         console.log(error);
-        alert("Erro ao buscar a encomenda!");
+        alert("Erro ao buscar!");
     }
 }
 
 
-async function cadastroEncomanda() {
-    let bloco = document.querySelector('.Bloco');
-    let andar = document.querySelector('.Andar');
-    let apartamento = document.querySelector('.Apto');
-
+async function cadastroEncomenda(bloco, andar, apartamento) {
     await http.post("/encomenda/add/", { bloco: bloco, andar: andar, apartamento: apartamento })
         .then(res => {
             console.log(res);
@@ -30,7 +23,7 @@ async function cadastroEncomanda() {
         })
         .catch(error => {
             console.log(error);
-            alert("Erro ao cadastrar a encomenda!");
+            alert("Erro ao cadastrar!");
         });
 }
 

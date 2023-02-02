@@ -25,7 +25,7 @@
 
             <li><a href="./encomendaCadastro.html">Cadastro</a></li>
 
-            <!-- <li><a href="#">Entrar</a></li> -->
+            <li><a href="./login.html">Entrar</a></li>
         </ul>
     </nav>
 
@@ -105,118 +105,147 @@
         </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../js/encomedas.js"></script>
-    <script>
-        function buscar(event) {
-
-            let numeroBloco = document.querySelector('#bloco').value;
-            let numeroAndar = document.querySelector('#andar').value;
-            let numeroApto = document.querySelector('#apto').value;
-
-            if (confirm(`Salvar os dados\n Bloco:${numeroBloco},\n Andar: ${numeroAndar} \n e Apartamento: ${numeroApto}`)) {
-                event.preventDefault();
-                //let text = document.querySelector('.text').value;
-                let bloco = document.querySelector('.Bloco');
-                let andar = document.querySelector('.Andar');
-                let apto = document.querySelector('.Apto');
-
-                console.log(numeroBloco, numeroAndar, numeroApto);
-
-                switch (parseInt(numeroBloco)) {
-                    case 1:
-                        bloco.innerText = "OK";
-                        break;
-                    case 2:
-                        bloco.innerText = "OK";
-                        break;
-                    case 3:
-                        bloco.innerText = "OK";
-                        break;
-                    case 4:
-                        bloco.innerText = "OK";
-                        break;
-                    default:
-                        bloco.innerText = "No value found";
-                }
-
-                switch (parseInt(numeroAndar)) {
-                    case 1:
-                        andar.innerText = "OK";
-                        break;
-                    case 2:
-                        andar.innerText = "OK";
-                        break;
-                    case 3:
-                        andar.innerText = "OK";
-                        break;
-                    case 4:
-                        andar.innerText = "OK";
-                        break;
-                    default:
-                        andar.innerText = "No value found";
-                }
-
-                switch (parseInt(numeroApto)) {
-                    case 101:
-                        apto.innerText = "OK";
-                        break;
-                    case 102:
-                        apto.innerText = "OK";
-                        break;
-                    case 103:
-                        apto.innerText = "OK";
-                        break;
-                    case 104:
-                        apto.innerText = "OK";
-                        break;
-                    case 201:
-                        apto.innerText = "OK";
-                        break;
-                    case 202:
-                        apto.innerText = "OK";
-                        break;
-                    case 203:
-                        apto.innerText = "OK";
-                        break;
-                    case 204:
-                        apto.innerText = "OK";
-                        break;
-                    case 301:
-                        apto.innerText = "OK";
-                        break;
-                    case 302:
-                        apto.innerText = "OK";
-                        break;
-                    case 303:
-                        apto.innerText = "OK";
-                        break;
-                    case 304:
-                        apto.innerText = "OK";
-                        break;
-                    case 401:
-                        apto.innerText = "OK";
-                        break;
-                    case 402:
-                        apto.innerText = "OK";
-                        break;
-                    case 403:
-                        apto.innerText = "OK";
-                        break;
-                    case 404:
-                        apto.innerText = "OK";
-                        break;
-                    default:
-                        apto.innerText = "No value found";
-
-                }
-            }
-
-            buscarEncomenda();
-        }
-    </script>
-
+    <section>
+        <div id="tabela-encomendas">
+        </div>
+    </section>
 </body>
 
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../js/encomedas.js"></script>
+
+<script>
+    async function buscar(event) {
+
+        let numeroBloco = document.querySelector('#bloco').value;
+        let numeroAndar = document.querySelector('#andar').value;
+        let numeroApto = document.querySelector('#apto').value;
+
+        if (confirm(`Salvar os dados\n Bloco:${numeroBloco},\n Andar: ${numeroAndar} \n e Apartamento: ${numeroApto}`)) {
+            event.preventDefault();
+            //let text = document.querySelector('.text').value;
+            let bloco = document.querySelector('.Bloco');
+            let andar = document.querySelector('.Andar');
+            let apto = document.querySelector('.Apto');
+
+            console.log(numeroBloco, numeroAndar, numeroApto);
+
+            switch (parseInt(numeroBloco)) {
+                case 1:
+                    bloco.innerText = "OK";
+                    break;
+                case 2:
+                    bloco.innerText = "OK";
+                    break;
+                case 3:
+                    bloco.innerText = "OK";
+                    break;
+                case 4:
+                    bloco.innerText = "OK";
+                    break;
+                default:
+                    bloco.innerText = "No value found";
+            }
+
+            switch (parseInt(numeroAndar)) {
+                case 1:
+                    andar.innerText = "OK";
+                    break;
+                case 2:
+                    andar.innerText = "OK";
+                    break;
+                case 3:
+                    andar.innerText = "OK";
+                    break;
+                case 4:
+                    andar.innerText = "OK";
+                    break;
+                default:
+                    andar.innerText = "No value found";
+            }
+
+            switch (parseInt(numeroApto)) {
+                case 101:
+                    apto.innerText = "OK";
+                    break;
+                case 102:
+                    apto.innerText = "OK";
+                    break;
+                case 103:
+                    apto.innerText = "OK";
+                    break;
+                case 104:
+                    apto.innerText = "OK";
+                    break;
+                case 201:
+                    apto.innerText = "OK";
+                    break;
+                case 202:
+                    apto.innerText = "OK";
+                    break;
+                case 203:
+                    apto.innerText = "OK";
+                    break;
+                case 204:
+                    apto.innerText = "OK";
+                    break;
+                case 301:
+                    apto.innerText = "OK";
+                    break;
+                case 302:
+                    apto.innerText = "OK";
+                    break;
+                case 303:
+                    apto.innerText = "OK";
+                    break;
+                case 304:
+                    apto.innerText = "OK";
+                    break;
+                case 401:
+                    apto.innerText = "OK";
+                    break;
+                case 402:
+                    apto.innerText = "OK";
+                    break;
+                case 403:
+                    apto.innerText = "OK";
+                    break;
+                case 404:
+                    apto.innerText = "OK";
+                    break;
+                default:
+                    apto.innerText = "No value found";
+
+            }
+        }
+
+        let listaEncomenda = await buscarEncomenda(numeroBloco, numeroAndar, numeroApto);
+        montarTabela(listaEncomenda);
+    }
+
+    function montarTabela(listaEncomenda) {
+        let tabelaEncomenda = document.getElementById("tabela-encomendas");
+        let tabela = `<p> Quantidade: <b>${listaEncomenda.length}</b> </p>`
+        tabela += `<table>`
+        tabela += `<tr>`;
+        tabela += `<th>Bloco</th>`;
+        tabela += `<th>Andar</th>`;
+        tabela += `<th>Apartamento</th>`;
+        tabela += `<th>Data Entrada</th>`;
+        tabela += `<th>Data Saida</th>`;
+        tabela += `</tr>`;
+        for (encomenda of listaEncomenda) {
+            tabela += '<tr>'
+            tabela += `<td>${encomenda.bloco}</td>`;
+            tabela += `<td>${encomenda.andar}</td>`;
+            tabela += `<td>${encomenda.apartamento}</td>`;
+            tabela += `<td>${encomenda.data_entrada}</td>`;
+            tabela += `<td>${encomenda.data_saida}</td>`;
+            tabela += `</tr>`;
+        }
+        tabela += "</table>";
+        tabelaEncomenda.innerHTML = tabela
+    }
+</script>
