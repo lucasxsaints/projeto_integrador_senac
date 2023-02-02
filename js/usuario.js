@@ -7,13 +7,6 @@ async function login() {
     let nome = document.getElementById("nome").value;
     let senha = document.getElementById("senha").value;
 
-    // if (nome == "Projeto" && senha == "abc") {
-    //     alert("Sucesso!");
-    //     location.href = "index.html";
-    // } else {
-    //     alert("Usuário ou senha incorretos");
-    // }
-
     await http.post("/usuario/login", { email: nome, password: senha })
         .then(res => {
             console.log(res);
