@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+
+    <nav id="menu-h">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    Inicio
+                </a>
+            </li>
+
+            <!-- <li><a href="https://academy.satellasoft.com">Sobre</a></li> -->
+
+            <li><a href="pages/endereco.html">Endereços</a></li>
+
+            <li><a href="pages/cadastroEncomendas.html">Cadastro</a></li>
+
+            <!-- <li><a href="#">Entrar</a></li> -->
+        </ul>
+    </nav>
+
+    <div id="login">
+        <form class="card">
+            <div class="card-header">
+                <h1>Login</h1>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <input type="text" placeholder="Nome" id="nome">
+                    <input type="password" placeholder="Senha" id="senha">
+                    <input type="submit" onclick="login(); return false">
+                </div>
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
