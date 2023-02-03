@@ -10,7 +10,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 15px;
-    margin-bottom: 150px;
+    margin-bottom: 90px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -21,6 +21,7 @@ body {
 #menu-h a {
     color: rgb(243, 230, 45);
     text-decoration: solid;
+    font-size: 20px;
 }
 
 #menu-h li {
@@ -36,4 +37,15 @@ body {
 
 #menu-h a:hover {
     color: black;
+}
+
+nav img {
+
+    position: absolute;
+    /* top: 100; */
+    left: 0;
+    width: 13%;
+    padding: 80px;
+
+
 }
